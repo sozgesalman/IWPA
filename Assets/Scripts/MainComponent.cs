@@ -3,6 +3,7 @@ namespace IWPAGamesProject
     using Devkit.Base.Component;
     using IWPAGamesProject.Component;
     using IWPAGamesProject.State;
+
     using System.Collections;
     using System.Collections.Generic;
     using UnityEngine;
@@ -15,7 +16,6 @@ namespace IWPAGamesProject
 
         private AppState appState;
 
-
         private void Awake()
         {
             componentContainer = new ComponentContainer();
@@ -27,6 +27,7 @@ namespace IWPAGamesProject
             CreateGamePlayComponent();
 
             InitializeComponents();
+
             CreateAppState();
             appState.Enter();
         }
@@ -52,6 +53,7 @@ namespace IWPAGamesProject
             uiComponent.Initialize(componentContainer);
             gamePlayComponent.Initialize(componentContainer);
         }
+
 
         private void CreateAppState()
         {

@@ -11,6 +11,7 @@ namespace IWPAGamesProject.UserInterface
     public class BaseCanvas : MonoBehaviour
     {
         public delegate void ReturnToMainMenuDelegate();
+
         public event ReturnToMainMenuDelegate OnReturnToMainMenu;
 
         private Canvas canvasComponent = null ;
@@ -97,5 +98,6 @@ namespace IWPAGamesProject.UserInterface
         }
 
     }    
+
 }
 
