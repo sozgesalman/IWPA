@@ -13,8 +13,8 @@ namespace IWPAGamesProject.State
 
         public AppState(ComponentContainer componentContainer)
         {
-            mainState = new MainState(componentContainer);
-            gameState = new GameState(componentContainer);
+            //mainState = new MainState(componentContainer);
+            //gameState = new GameState(componentContainer);
 
             this.AddSubStates(mainState);
             this.AddSubStates(gameState);
